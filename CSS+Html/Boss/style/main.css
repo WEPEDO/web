@@ -1,0 +1,241 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, 'Microsoft YaHei' sans-serif;
+    color:#7e8793;
+}
+
+.home-header{
+    background: url('../images/home-bg.png') no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.home-header > img{
+    width: 65%;
+    margin: 2rem;
+}
+
+.home-header form{
+    background: white;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 2.2rem;
+    border-radius: 2.2rem;
+} 
+.home-header form  input{
+    width: 75%;
+    border: none;
+    color: #999;
+    font-size: 0.85rem;
+    outline: none;
+}
+.home-header form button{
+    font-size: 0.9rem;
+    color: #5bd4c7;
+    border:none;
+    background: none;
+}
+
+.home-categories{
+    padding:0 1rem;
+}
+
+.home-categories dt{
+    display: flex;
+    align-items: center;
+}
+.home-categories dt img{
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.home-categories dd{
+    margin: 0 -0.4rem;
+}
+
+.home-categories dd .tag{
+    background: #f5f8f9;
+    color: #7e8793;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    border-radius: 2rem;
+    text-decoration: none;
+    margin: 0.5rem 0.4rem;
+    font-size: 0.8rem;
+}
+
+.home-footer{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 0.75rem;
+}
+
+.home-footer p{
+    margin: 0.2rem 0;
+}
+
+/*list-page */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.list-header{
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid #f5f8f9;
+
+}
+
+.list-header img{
+    height: 1.2rem;
+}
+
+.list-header form{
+    width: 100%;
+}
+.list-header form .inner{
+    width: 100%;
+    background: #f4f7f9;
+    margin: 0 1rem;
+    line-height: 1.5rem;
+    border-radius: 2rem;
+    padding: 0 1rem;
+}
+
+.list-header form .inner input{
+    border: none;
+    width: 80%;
+    background: transparent;
+    outline: none;
+    color: #7e8793;
+}
+
+.list-header form button{
+    border: none;
+    background: none;
+    font-size: 0.9rem;
+    color: #5dd5ca;
+    flex-shrink: 0;
+    padding: 0;
+}
+.filter dd, .filter dl{
+    margin: 0;
+}
+.filter{
+    padding: 0.5rem 1rem;
+    border: 1px slide #f5f8f9;
+}
+
+.filter dd{
+    display: none;
+}
+
+.filter .active dt{
+    color: #aaa;
+}
+.filter dt{
+    font-size: 0.8rem;
+}
+
+.filter dt:after{
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border: 1px solid #999;
+    margin-left: 0.5rem;
+    border-style: solid none none solid;
+    transform: rotate(225deg);
+    transform-origin: 2px 1px;
+    margin-left: 0.5rem;
+    transition: all 0.2s;
+}
+
+.filter .active dt:after{
+    transform: rotate(45deg);
+}
+
+.filter .active dd{ 
+    display: block;
+    background:rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 85px;
+    left: 0;
+} 
+
+.filter .active dd ul{
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+.filter dd li{
+    list-style-type: none;
+}
+.filter .active dd li{
+    line-height: 3.5rem;
+    text-indent: 1.5rem; 
+}
+
+.filter .active dd li.active{
+    background: #f5f8f9;
+    color: #333;
+}
+
+.job-list{
+    margin: 0;
+    padding: 0;
+}
+
+.job-items{
+    margin: 1rem;
+    color: #7e8793;
+    text-decoration: none;
+    /* 去掉下划线 */
+    border-bottom: 1px solid #f5f8f9;
+    padding-bottom: 0.8rem;
+}
+
+/* job-items下的元素img */
+.job-items >img{
+    height: 3.5rem;
+    border-radius: 0.3rem;
+    padding: 1rem;
+}
+
+.job-items .text{
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.job-items .title {
+    color: #333;
+}
+
+.job-items .company{
+    color: #333;
+    font-size: 0.8rem;
+    padding:0.3rem 0;
+}
+
+.job-items .props{
+    font-size: 0.4rem;
+}
+
+.job-items .salery{
+    color: #fc6c38;
+    font-size: 1.3rem;
+}
+
+.job-items .props span{
+    margin-right: 0.5rem;
+} 
+
+
+
+
