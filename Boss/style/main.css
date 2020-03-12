@@ -1,0 +1,161 @@
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, 'Microsoft YaHei',sans-serif;
+  color: #7e8793;
+  -webkit-font-smoothing: antialiased;
+}
+
+.home-header {
+  background: url('../images/home-bg.png') no-repeat;
+  background-size: 100% auto;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.home-header > img {
+  width: 67%;
+  margin: 2.2rem;
+}
+
+.home-header form{
+  background: white;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 2.2rem;
+  border-radius: 2rem;
+}
+
+.home-header form input{
+  width: 75%;
+  border: none;
+  color: #aeaeae;
+}
+
+
+.home-header form button {
+  font-size: 14px;
+  color: #5bd4c7;
+  font-weight: lighter;
+  border: none;
+  background: none;
+}
+
+.home-categories{
+  padding: 0 1rem;
+}
+
+
+.home-categories dt {
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+.home-categories dt img{
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.home-categories dd {
+  margin: 0 -0.4rem;
+}
+
+.home-categories dd .tag{
+  background-color: #f5f8f9;
+  color: #7e8793;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 2rem; 
+  text-decoration: none;
+  margin: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+}
+
+
+.home-footer{
+  width: 70%;
+  margin: 0 auto;
+  font-size: 0.7rem;
+}
+
+.home-footer p{
+  margin: 0.2rem 0;
+}
+
+
+/* list-page */
+
+.flex {
+  display: flex;
+  /* 分散对齐 */
+  justify-content: space-between;
+  /* 横向分散对齐，垂直居中  */
+  align-items: center;
+}
+
+.list-header {
+  padding: 0.8rem 1rem;
+}
+
+.list-header img {
+  height: 1.5rem;
+}
+
+.list-header form .inner {
+  width: 100%;
+  background: #f5f8f9;
+  margin: 0 1rem;
+  border-radius: 2rem;
+  padding: 0 1rem;
+}
+
+.list-header form .inner input {
+  width: 80%;
+  /* 背景透明 */
+  background: transparent;
+  border: none;
+  line-height: 1.7rem;
+  outline: none;
+  color: #7e8793;
+}
+
+.list-header form button{
+  border: none;
+  background: none;
+  font-size: 0.9rem;
+  color: #5bd4c7;
+  /* 不要压缩 */
+  flex-shrink: 0;
+  padding: 0;
+} 
+
+.list-header form {
+  width: 100%;
+}
+
+.filter {
+  padding: 1rem;
+  border: 1px solid #f5f8f9;
+}
+
+.filter dl, .filter dd{
+  margin: 0;
+}
+
+.filter dt{
+  font-size: 0.8rem;
+  color: #aeaeae;
+}
+/* 小三角的实现 */
+.filter dt:after {
+  content: '';
+  
+}
+
+.filter dd {
+  display: none;
+}
+
+.filter .active dd {
+  /* display: block; */
+}
+
