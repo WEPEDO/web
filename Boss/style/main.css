@@ -145,17 +145,106 @@ body{
   font-size: 0.8rem;
   color: #aeaeae;
 }
+.filter .active dt{
+  color: #333;
+}
+
 /* 小三角的实现 */
 .filter dt:after {
   content: '';
-  
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border: 1px solid #999;
+  /* 只留小方框的上和左边，然后旋转45度 */
+  border-style: solid none none solid;
+  transform: rotate(225deg);
+  transform-origin: 2px 1px;
+  margin-left: 0.5rem;
+  /* 小箭头动画 */
+  transition: all 0.3s;
 }
 
+.filter .active dt:after{
+  transform: rotate(45deg);
+}
 .filter dd {
   display: none;
 }
 
 .filter .active dd {
-  /* display: block; */
+  display: block;
+  background: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 99px;
+  left: 0;
 }
 
+.filter .active dd ul {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.filter .active dd li{
+  line-height: 3.5rem;
+  /* 缩进 */
+  text-indent: 1rem;
+  list-style: none;
+  color: #aaa
+}
+
+.filter .active dd li.active{
+  background: #f8f8fa;
+  color: #333;
+}
+
+
+/* job-list */
+
+.job-list {
+  margin: 0;
+  padding: 0;
+}
+.job-item {
+  padding-bottom: 1rem;
+  margin: 2rem;
+  color: #7e8793;
+  text-decoration: none;
+  border-bottom: 1px solid #f5f8f9;
+}
+.job-item > img {
+  height: 3.8rem;
+  border-radius: 0.3rem;
+}
+
+.job-item .text{
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.job-item .title{
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.job-item .company{
+  color: #333;
+  font-size: 0.8rem;
+  margin: 0.4rem 0;
+}
+
+.job-item .props{
+  font-size: 0.8rem;
+} 
+
+.job-item .salary {
+  color: #fc6c38;
+  font-size: 1.2rem;
+}
+
+.job-item .props span{
+  margin-right: 0.4rem;
+}
