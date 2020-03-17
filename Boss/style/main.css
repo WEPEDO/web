@@ -5,6 +5,27 @@ body{
   -webkit-font-smoothing: antialiased;
 }
 
+.flex {
+  display: flex;
+  /* 分散对齐 */
+  justify-content: space-between;
+  /* 横向分散对齐，垂直居中  */
+  align-items: center;
+}
+
+.padded {
+  padding: 1rem;
+}
+
+.grey{
+  color: #9fasb0;
+}
+
+* {
+  /* 如果里面有padding的话，不要把自己撑大，而是往内部挤压*/
+  box-sizing: border-box;
+}
+/* home_page */
 .home-header {
   background: url('../images/home-bg.png') no-repeat;
   background-size: 100% auto;
@@ -83,14 +104,6 @@ body{
 
 
 /* list-page */
-
-.flex {
-  display: flex;
-  /* 分散对齐 */
-  justify-content: space-between;
-  /* 横向分散对齐，垂直居中  */
-  align-items: center;
-}
 
 .list-header {
   padding: 0.8rem 1rem;
@@ -247,4 +260,260 @@ body{
 
 .job-item .props span{
   margin-right: 0.4rem;
+}
+
+/* detail.css */
+.top-bar img {
+  height: 1.1rem;  
+}
+
+.top-bar form{
+  width: 40%;
+  border: 1px solid #5bd4c7;
+  border-radius: 2rem;
+}
+
+.top-bar form input{
+  border: none;
+  width: 80%;
+  background: none;
+  line-height: 1.5rem;
+  color: #aaa;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.top-bar  form button{
+  border: none;
+  background: url(../images/icons.png) no-repeat top center;
+  background-size: 100% auto;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;;
+}
+
+
+.job-info {
+  background: #62d5c8;
+  color: #fff; 
+}
+
+.job-info .title{
+  font-size: 1.2rem'
+}
+
+.job-info .props {
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+.job-info .props .items i{
+  display: inline-block;
+  width: 1px;
+  height: 0.8rem;
+  /* #fff: 白色 */
+  background: #fff;
+  margin: 0 0.5rem;
+}
+
+.job-info .tags span{
+  border: 1px solid #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+}
+
+.user-info {
+  background: #eefbf9;
+}
+
+.user-info > img{
+  height: 3.5rem;
+  border-radius: 3.5rem;
+}
+
+.btn{
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 2rem;
+}
+
+.user-info > button{
+  background: #62d5c8;
+  color: #fff;
+  /* 让button不缩小 */
+  flex-shrink: 0;
+}
+
+.user-info .name{
+  color: #333;
+}
+
+.user-info .name .like{
+  font-size: 0.8rem;
+  color: #fb7042;
+}
+
+.user-info  .desc {
+  font-size: 0.5rem;
+  color: #aaa;
+}
+
+.user-info .info{
+  width: 40%;
+  margin: 0 1rem;
+
+}
+
+.job-detail h3{
+  font-size: 1rem;
+  color: #333;
+  position: relative;
+}
+
+.job-detail h3:after{
+  content: '';
+  width: 1rem;
+  height: 1px;
+  display: inline-block;
+  background: #62d5c8;
+  position: absolute;
+  top: 1.8rem;
+  left: 0;
+}
+
+.job-detail .text{
+  line-height: 1.6rem;
+  font-size: 0.9rem;
+}
+
+.job-detail .text table{
+  border: 1px solid #ebecef;
+  padding: 0.7rem 0.3rem; 
+  font-size: 0.7rem;
+}
+
+.job-detail .text th{
+  /* 去掉加粗 */
+  font-weight: normal; 
+  width: 6rem;
+  color: #9fasb0;
+}
+
+.job-detail .text td{
+  width: 8rem;
+}
+
+.company-info {
+  background: #eefbf9;
+}
+
+.company-info > img{
+  height: 3.5rem;
+  border-radius: 3.5rem;
+}
+
+.company-info .info{
+  width: 100%;
+  margin-left: 1rem;
+   
+}
+
+.company-info .info .name {
+  color: #333;
+}
+
+.company-info .info .name .btn{
+  background: #5bd4c7;
+  color: #fff;
+}
+
+.company-info .info .desc{
+  font-size: 0.8rem;
+  color: #333;
+
+}
+
+.company-info .info .tags{
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  /* 向左对齐 */
+  justify-content: flex-start;
+}
+
+.company-info .info .tags i{
+  display: inline-block;
+  width: 1px;
+  height: 0.8rem;
+  /* #fff: 白色 */
+  background: #ebecef;
+  margin: 0 0.5rem;
+}
+
+
+.related-job h3{
+  color: #7e8793;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.related-job ul{
+  /* 去掉列表样式 */
+  list-style: none;
+
+}
+
+.related-job ul li > a{
+  border: none;
+  border-top: 1px solid #ebecef;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.related-job .btn{
+  padding: 0.4rem 1.2rem;
+  margin-top: 0.2rem;
+  border: 1px solid #62d5c8;
+  background: none;
+  color:#62d5c8;
+}
+
+.related-companies h3{
+  color: #7e8793;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.related-companies .tags a{
+  font-size: 0.8rem;
+  color:#aeaeae;
+  text-decoration: none;
+  margin: 0 0.8rem 0.2rem 0;
+}
+
+.job-footer {
+  margin: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid #ebecef;
+  line-height: 1.5rem;
+}
+.breadcrumb-nav a{
+  font-size: 0.7rem;
+  color:#aeaeae;
+  text-decoration: none;
+}
+
+.breadcrumb-nav i{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #999;
+  /* 只留小方框的上和左边，然后旋转45度 */
+  border-style: solid solid none none;
+  transform: rotate(45deg);
+  transform-origin: 2px 1px;
+  margin-left: 0.5rem;
+  /* 小箭头动画 */
+  transition: all 0.3s;
 }
