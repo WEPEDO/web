@@ -509,7 +509,7 @@ body{
   width: 8px;
   height: 8px;
   border: 1px solid #999;
-  /* 只留小方框的上和左边，然后旋转45度 */
+  /* 只留小方框的上和右边，然后旋转45度 */
   border-style: solid solid none none;
   transform: rotate(45deg);
   transform-origin: 2px 1px;
