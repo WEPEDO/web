@@ -26,12 +26,12 @@ export default {
 <style lang="less" scoped>
     .feature_view{
         a{
-            display: block;
+            // display: block;
+            font-size: 20px;
             width: 100vw;
             height: 5.5rem;
             img{
                 width: 100%;
-                height: 100%;
             }
         }
     }
